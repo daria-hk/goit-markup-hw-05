@@ -447,6 +447,7 @@ p.overlay {
   position: absolute;
   margin-left: 16px;
   border: none;
+  cursor: pointer;
 }
 
 .button-submit::after {
