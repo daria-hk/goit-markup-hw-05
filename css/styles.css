@@ -437,7 +437,7 @@ p.overlay {
 
 .button-submit {
   border-radius: 4px;
-  padding: 8px 64px 8px 24px;
+  padding: 8px 24px;
   min-width: 165px;
   height: 40px;
   background: #4d5ae5;
@@ -447,16 +447,16 @@ p.overlay {
   line-height: 150%;
   letter-spacing: 0.04em;
   justify-content: center;
+  align-items: center;
   text-align: center;
   color: #fff;
   margin-left: 16px;
   border: none;
   cursor: pointer;
+  display: flex;
 }
 
 .after-img {
-  display: inline-block;
-  position: absolute;
   margin-left: 16px;
 }
 
