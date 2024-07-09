@@ -418,6 +418,7 @@ p.overlay {
 
 .form {
   display: flex;
+  gap: 24px;
 }
 
 .form-input {
@@ -450,7 +451,6 @@ p.overlay {
   align-items: center;
   text-align: center;
   color: #fff;
-  margin-left: 16px;
   border: none;
   cursor: pointer;
   display: flex;
