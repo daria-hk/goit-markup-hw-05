@@ -482,9 +482,9 @@ p.overlay {
   background: rgba(46, 47, 66, 0.4);
   z-index: 99;
   backdrop-filter: blur(1px);
-  opacity: 0;
+  /*opacity: 0;
   pointer-events: none;
-  visibility: hidden;
+  visibility: hidden;*/
 }
 
 .backdrop.is-open {
@@ -504,6 +504,7 @@ p.overlay {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-header {
@@ -514,7 +515,6 @@ p.overlay {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 72px;
   margin-bottom: 16px;
 }
 
@@ -540,7 +540,7 @@ p.overlay {
 }
 
 .modalform {
-  padding: 0 24px;
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-close-btn {
@@ -554,17 +554,25 @@ p.overlay {
   height: 24px;
   border-radius: 50%;
   cursor: pointer;
-  line-height: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover {
-  fill: #fff;
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   background-color: #404bbf;
+  fill: #fff;
+  border: none;
 }
 
 .modal-close-icon {
   width: 8px;
   height: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-wrapper {
   margin-bottom: 8px;
