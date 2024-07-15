@@ -482,9 +482,9 @@ p.overlay {
   background: rgba(46, 47, 66, 0.4);
   z-index: 99;
   backdrop-filter: blur(1px);
-  /*opacity: 0;
+  opacity: 0;
   pointer-events: none;
-  visibility: hidden;*/
+  visibility: hidden;
 }
 
 .backdrop.is-open {
